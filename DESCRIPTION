@@ -1,0 +1,19 @@
+Package: Lipidepifind
+Type: Package
+Title: Lipid epimetabolite identificaiton and epi-reaction enrichment
+Version: 0.1.0
+Author: person("Xinguang","Liu",email = "xgliu@hactcm.edu.cn",role = c("aut","cre"))
+Maintainer: Xinguang Liu <xgliu@hactcm.edu.cn>
+Description: Lipidepifind is a tool to identify epi-metabolites (structure modifications out of classical bio-pathway)of lipids from biosamlpes. The package contains a predicted lipid epi-metabolite library based on thousands of parent lipids and 94 types of structural modifications. Users can upload rawdata of high-resolution mass spectrometry, and the m/z matching of epimetbolites can be conducted by <Lipid_epimetabolite_matching>. In addition, epi-reaction_enrichment  of Lipid epimetabolite biomarker can be conducted by <epi-reaction_enrichment>, to identify the significantly changed structural modification type of lipids in a disease. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends: 
+    data.table,
+    DBI,
+    dtplyr,
+    R (>= 2.10),
+    readxl,
+    RSQLite,
+    tidyverse
