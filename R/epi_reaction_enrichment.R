@@ -29,7 +29,7 @@ epi_reaction_enrichment <- function(result,
     arrange(n) %>%
     inner_join(x_value, by = "Reaction") %>%
     mutate(
-      p_value = 1 - phyper(n - 1, nrow(result), 3473, 174),
+      p_value = 1 - phyper(n - 1, nrow(result), 1229, x),
       log10_p_value = -log10(p_value),
       log10_p_value = if_else(is.infinite(log10_p_value),-1,log10_p_value)
 
