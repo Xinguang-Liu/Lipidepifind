@@ -12,7 +12,9 @@
 #'
 #' @return result data frame
 #' @export
-#'
+#' @importFrom dplyr %>% mutate across left_join filter sym select
+#' @importFrom data.table as.data.table data.table rbindlist
+#' @importFrom DBI dbConnect dbWriteTable dbGetQuery dbDisconnect
 #' @examples
 #' library(readxl)
 #' library(Lipidepifind)

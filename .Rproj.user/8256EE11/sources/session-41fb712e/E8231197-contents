@@ -1,5 +1,0 @@
-data1 <- readRDS("data/data1.rds")
-data2 <- readRDS("data/data2.rds")
-data3 <- readRDS("data/data3.rds")
-result <- readRDS("data/result.rds")
-x_value <- readRDS("data/x_value.rds")

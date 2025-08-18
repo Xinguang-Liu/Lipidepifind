@@ -7,7 +7,8 @@ if (FALSE) {
   data1 <- read_xlsx("inst/extdata/Parent lipids.xlsx") %>% as.data.table()
   data2 <- read_xlsx("inst/extdata/Epireactions.xlsx") %>% as.data.table()
   data3 <- read_xlsx("inst/extdata/Allfeatures dataset.xlsx") %>% as.data.table()
-  x_value <- read_excel("inst/extdata/Number of lipid metabolites identified by metabolic reaction (x value).xlsx")
+  # x_value <- read_excel("inst/extdata/Number of lipid metabolites identified by metabolic reaction (x value).xlsx")
+  x_value <- read_excel("inst/extdata/Number of lipid metabolites identified by metabolic reaction-NEW.xlsx")
   result <- read_excel("inst/extdata/result.xlsx")
 
   saveRDS(data1,"data/data1.rds")
@@ -15,7 +16,8 @@ if (FALSE) {
   saveRDS(data3,"data/data3.rds")
   saveRDS(x_value,"data/x_value.rds")
   saveRDS(result,"data/result.rds")
-  get_metabolite_mz_predictor(data1,data2,data3,engine = "sqlite")
+  # get_metabolite_mz_predictor(data1,data2,data3,engine = "sqlite")
+  lipid_epimetabolite_matching(data1,data2,data3,engine = "sqlite")
 
   # 为所有函数在man文件夹(如果没有，会创建)下逐一自动建立Rd文档，以及更新NAMESPCAE文档
   devtools::document()

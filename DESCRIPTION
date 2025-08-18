@@ -13,7 +13,18 @@ Depends:
     data.table,
     DBI,
     dtplyr,
-    R (>= 2.10),
+    R (>= 3.5),
     readxl,
     RSQLite,
     tidyverse
+Imports:
+  dplyr,
+  ggplot2,
+  data.table,
+  DBI
+Suggests:
+  readxl,
+  dtplyr,
+  tidyverse,
+  stats,
+  RSQLite

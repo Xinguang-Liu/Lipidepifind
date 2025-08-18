@@ -10,7 +10,9 @@
 #'
 #' @return list of plot and table
 #' @export
-#'
+#' @importFrom dplyr %>% count arrange inner_join mutate if_else transmute select
+#' @importFrom ggplot2 ggplot aes geom_point labs scale_color_gradient
+#' @importFrom stats phyper
 #' @examples
 #' library(readxl)
 #' library(Lipidepifind)
@@ -29,7 +31,8 @@ epi_reaction_enrichment <- function(result,
     arrange(n) %>%
     inner_join(x_value, by = "Reaction") %>%
     mutate(
-      p_value = 1 - phyper(n - 1, nrow(result), 1229, x),
+      # p_value = 1 - phyper(n - 1, nrow(result), 1229, x),
+      p_value = 1 - phyper(n - 1, nrow(result), 725, x),
       log10_p_value = -log10(p_value),
       log10_p_value = if_else(is.infinite(log10_p_value),-1,log10_p_value)
 
