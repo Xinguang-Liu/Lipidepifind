@@ -11,7 +11,7 @@ An object of class \code{data.table} (inherits from \code{data.frame}) with 94 r
 data2
 }
 \description{
-EpiReactions: The information for the 94 epi-metabolic reactions that may occur in lipids included the reaction type,
+EpiReactions: The information for the 62 epi-metabolic reactions that may occur in lipids included the reaction type,
 reaction formula, the change of formula and mass after the reaction,
 and the matching relationship between the lipid structure and reactions.
 }

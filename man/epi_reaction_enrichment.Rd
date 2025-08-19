@@ -33,6 +33,6 @@ data2 <- read_xlsx(file.path(data_folder, "Epireactions.xlsx")) \%>\% as.data.ta
 epi_reaction_enrichment_list <- epi_reaction_enrichment(result,x_value,data2)
 }
 \references{
-1. Xinguang Liu, Ang Zhang, Yang Xie, Yanmin Shi, Jianya Yang, Yan Du, Jinyan Wu, Yitong Gao, Jiansheng Li.
-Lipidepifind: A Workflow for the Characterization of Lipid Epi-metabolites as Diagnostic Biomarkers for Idiopathic Pulmonary Fibrosis, submitted.
+1. Xinguang Liu, Yunfan Zhao, Yang Xie, Yanmin Shi, Jianya Yang, Yan Du, Jinyan Wu, Yitong Gao, Ang Zhang, Jiansheng Li.
+Characterization of Lipid Epi-metabolites/reaction as Diagnostic Biomarkers for Idiopathic Pulmonary Fibrosis by Lipidepifind, submitted.
 }
